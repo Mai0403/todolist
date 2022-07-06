@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <title>To do list</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=devide-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.6.0/dist/full.css" rel="stylesheet" type="text/css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex justify-center">
+  <div class=" inline-block space-y-12 sm:inline-block space-y-12 lg:flex items-center justify center space-x-24">
+    <div class="space-y-8">
+        <h class=" flex justify-center mt-12 text-6xl font-bold text-cyan-500 sm:flex justify-center mt-12">To Do List .</h>
+        <p class="text-sm sm:flex justify-center text-xl ml-12 lg:text-2xl">Stay Productive, get your works organised and done early.</p>
+    </div>
+
+    <div class="border-2 shadow-md bg-white rounded-lg p-10 space-y-4">
+        <div class="space-y-8">
+            <input class="border w-96 h-14 pl-4 rounded-lg" type="text" placeholder="Eamil or phone number">
+            <div>
+                <input class="border w-96 h-14 pl-4 rounded-lg" type="password" placeholder="Password">
+            </div>
+        </div>
+        <div class="space-y-8">
+            <botton class="flex justify-center bg-cyan-500 p-4 rounded-lg text-lg font-semibold text-white hover:bg-cyan-400"><a href="home.html">Log In</a></botton>
+            <p class="flex justify-center font-semibold text-cyan-500 hover:text-black"><a href="forgot.html">Forgot Password?</a> </p>
+        </div>
+        <div class="border-t p-6 flex justify-center">
+            <button class="flex justify-center bg-cyan-700 p-4 pl-8 pr-8 rounded-lg text-lg font-semibold text-white hover:bg-cyan-400"><a href="signup.html">Create new account</a></button>
+        </div>
+    </div>
+  </div>
+
+  <!-- data storage -->
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyALfVB0rfn8Mk69Ue_g1ZdiDplhwMQ9pug",
+      authDomain: "todolist-f7644.firebaseapp.com",
+      projectId: "todolist-f7644",
+      storageBucket: "todolist-f7644.appspot.com",
+      messagingSenderId: "1009894892209",
+      appId: "1:1009894892209:web:d927d5efa2b73975637890",
+      measurementId: "G-1HTD1QYQL7"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+  <script src="data.js"></script>
+
+</body>
+</html>

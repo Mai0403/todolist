@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <title>To do list</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=devide-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.6.0/dist/full.css" rel="stylesheet" type="text/css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="main.css" />
+</head>
+<body class="bg-white">
+    <div class="w-screen bg-cyan-500 flex items-center">
+        <div class="pl-12 pt-4 pb-4">
+            <h class="text-3xl font-bold text-white">To Do List .</h>
+        </div>
+    </div>
+
+     <header>
+		<h1>My Task List</h1>
+		<form id="new-task-form">
+			<input 
+				type="text" 
+				name="new-task-input" 
+				id="new-task-input" 
+				placeholder="What would you like to do?" />
+			<input 
+				type="submit"
+				id="new-task-submit" 
+				value="Add task" />
+		</form>
+	</header>
+	<main>
+		<section class="task-list">
+			<h2>Tasks</h2>
+
+			<div id="tasks">
+			</div>
+		</section>
+	</main>
+
+	<script src="main.js"></script>
+</body>
+</html>
